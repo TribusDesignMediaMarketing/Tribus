@@ -19,7 +19,22 @@ color: white;
 }
 h1{
 
+    
+    
 }
+
+#Copyright{
+right: 0;
+bottom:0;
+position: fixed;
+z-index: 2;
+font-size: 19;
+margin-right: 15px;
+color: dimgray;
+
+}
+
+
 #menu{
 color: grey;
 z-index: 2;
@@ -33,7 +48,22 @@ margin: auto;
 left: 0px;
 right: 0px;
 
+}
 
+
+.knapp{
+z-index: 2;
+position: fixed;
+left: 0;
+top: 0;
+height: 5%;
+width: auto;
+margin-left: 15px;
+margin-top: 15px;
+    
+}
+.knapp:hover{
+background-color:  #70B62C;
 }
 
 ul#menu li {
@@ -43,4 +73,9 @@ ul#menu li {
 }
 #enter:hover{
     color: #70B62C;
+}
+#enter{
+text-decoration: none;
+text-decoration-line: none;
+color: gray;
 }
