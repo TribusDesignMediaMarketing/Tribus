@@ -4,6 +4,7 @@ body{
 background-attachment: fixed;
     background-size: cover;
     opacity: 1;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
 #front{width: 100%;
