@@ -1,5 +1,5 @@
 body{
-    background-image: url(img/beautiful-landscape-with-mountains-and-lakes-with-sky-in-italy.jpg);
+    background-image: url(img/Bakgrunn.jpg);
     position: fixed;
 background-attachment: fixed;
     background-size: cover;
@@ -14,7 +14,7 @@ left: 0;
 right:  0;
 top: 0;
 bottom: 0;
-opacity: 0.95;
+opacity: 0.9;
 color: white;
 }
 h1{
@@ -27,7 +27,7 @@ font-size: 40px;
 list-style: none;
 position: fixed;
 font-style:normal;
-top: 80%;
+top: 90%;
 text-align: center;
 margin: auto;
 left: 0px;
