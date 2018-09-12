@@ -82,29 +82,53 @@ input[type=checkbox] ~ label {
   background: green;
   height: auto;
   color: #fff;
-width: 100px;
-bottom: 6px;
+width: 20%;
+bottom: 6%;
 position: fixed;
 text-align: center;
 margin: auto;
 left: 0%;
 right: 0%;
-
+font-size: 30px;
 }
 
 
 /*Gjør landingssidem usynelig*/
 
-input[type=checkbox]:checked ~ label ~ .content { 
-display: none;
-
+input[type=checkbox]:checked ~ label ~ .content{ 
+animation-name: go;
+animation-duration: 0.3s;
+animation-iteration-count: 1;
+animation-direction: normal;
+animation-fill-mode: forwards;
+animation-timing-function:ease-in;
 }
+
+@keyframes go{
+    0%{ height: 100%;}
+    100%{height: 0%;}
+    
+}
+
+
+
 
 /* sørger for at resten av siden popper opp når man trykker på knappen */
 
 input[type=checkbox]:checked ~ label ~ #omoss { 
 display: block;
+animation-name: go2;
+animation-duration: 0.3s;
+animation-iteration-count: 1;
+animation-direction: normal;
+animation-fill-mode: forwards;
+animation-timing-function:ease-in;
+}
 
+@keyframes go2{
+    0%{ height: 0%;}
+    100%{height: 100%;}
+    
 }
 
 input[type=checkbox]:hover ~ label
@@ -118,11 +142,11 @@ background: grey;
 /*Bildet av logoen med whit rundt*/
 .content 
 {
-width: auto;
 position: fixed;
 width: 100%;
+height: 100%;
 opacity: 0.9;
-color: white;
+background-color: white;
 z-index: -1;
 left: 0px;
 top: 0px;
@@ -143,7 +167,7 @@ display: none;
 /* Den er relativ slik at infoen vill komme opp automatisk etter at forsiden er borte*/
 #omoss{
 position: fixed;
-top: 0px;
+bottom: 0px;
 background: white;
 padding: 5px;
 width: 600px;
