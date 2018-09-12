@@ -7,17 +7,7 @@ background-attachment: fixed;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
-#front{width: 100%;
-position: fixed;
-z-index:0;
-margin: 0;
-left: 0;
-right:  0;
-top: 0;
-bottom: 0;
-opacity: 0.9;
-color: white;
-}
+
 h1{
 
     
@@ -48,11 +38,9 @@ text-align: center;
 margin: auto;
 left: 0px;
 right: 0px;
+opacity: 1;
+}
 
-}
-#Seokeywords{
-    opacity: 0;
-}
 
 .knapp{
 z-index: 2;
@@ -63,7 +51,7 @@ height: 5%;
 width: auto;
 margin-left: 15px;
 margin-top: 15px;
-    
+opacity: 1;
 }
 .knapp:hover{
 background-color:  #70B62C;
@@ -72,13 +60,98 @@ background-color:  #70B62C;
 ul#menu li {
     display:inline;
     margin: 15px;
+  opacity: 1;  
+}
+
+
+
+/* tester ut checkbox for å få frem resten av siden*/
+
+
+.wrapper {
+  border:none;
+    z-index: 3;
     
 }
-#enter:hover{
-    color: #70B62C;
+
+input[type=checkbox] {
+display: none;
+z-index: 3;
 }
-#enter{
-text-decoration: none;
-text-decoration-line: none;
-color: gray;
+input[type=checkbox] ~ label {
+  background: green;
+  height: auto;
+  color: #fff;
+width: 100px;
+bottom: 6px;
+position: fixed;
+text-align: center;
+margin: auto;
+left: 0%;
+right: 0%;
+
+}
+
+
+/*Gjør landingssidem usynelig*/
+
+input[type=checkbox]:checked ~ label ~ .content { 
+display: none;
+
+}
+
+/* sørger for at resten av siden popper opp når man trykker på knappen */
+
+input[type=checkbox]:checked ~ label ~ #omoss { 
+display: block;
+
+}
+
+input[type=checkbox]:hover ~ label
+{
+background: grey;
+
+}
+
+
+
+/*Bildet av logoen med whit rundt*/
+.content 
+{
+width: auto;
+position: fixed;
+width: 100%;
+opacity: 0.9;
+color: white;
+z-index: -1;
+left: 0px;
+top: 0px;
+}
+
+/*For å gjøre startknappen usynelig*/
+
+input[type=checkbox]:checked ~ label
+{
+ 
+display: none;
+}
+ 
+
+
+
+
+/* Den er relativ slik at infoen vill komme opp automatisk etter at forsiden er borte*/
+#omoss{
+position: fixed;
+top: 0px;
+background: white;
+padding: 5px;
+width: 600px;
+height: 100%;
+z-index: -1; 
+left: 0%;
+right: 0px;
+text-align: center;
+margin: auto;
+display: none;
 }
