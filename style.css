@@ -1,6 +1,5 @@
 body{
     background-image: url(img/Bakgrunn.jpg);
-    position: fixed;
 background-attachment: fixed;
     background-size: cover;
     opacity: 1;
@@ -129,9 +128,12 @@ animation-timing-function:ease-in;
 }
 
 @keyframes go2{
-    0%{ height: 0%;}
-    100%{height: 100%;}
-    
+    0%{ height: 0%;
+    position: fixed}
+    99%{height: 100%;
+    position: fixed}
+       100%{height: auto;
+    position: relative;}
 }
 
 input[type=checkbox]:hover ~ label
@@ -175,18 +177,29 @@ display: none;
 
 /* Den er relativ slik at infoen vill komme opp automatisk etter at forsiden er borte*/
 #omoss{
-position: fixed;
+position: relative;
 bottom: 0px;
 background: white;
 padding-left: 5%;
 padding-right: 5%;
 width: 600px;
-height: 100%;
-z-index: -1; 
+height: auto;
+z-index: 1; 
 left: 0%;
 right: 0px;
-text-align: center;
+text-align: left;
 margin-left: auto;
 margin-right: auto;
 display: none;
+padding-bottom: 5%;
+
+}
+
+#tribuslogo{
+top: 0px;
+margin-left: 22%;
+margin-right: 22%;
+margin-top: 0px;
+width: 50%;
+
 }
