@@ -52,7 +52,7 @@ position: relative;
 .Content{
 	background-color: white;
 	margin-left-right: 30px;
-	height: 1000px;
+	height: 1500px;
 	width: 90%;
 margin: auto;
 	left: 0px;
@@ -100,4 +100,58 @@ background-position: bottom;
 float: right;
 top: -250px;
 position: relative;
+}
+
+#radmedlemmer{
+position: relative;
+bottom: 0px;
+top: 250px;
+align-content: center;
+width: 100%;
+}
+.MedlemInfo{
+	width: 25%;
+	height: 300px;
+	position:relative;
+	z-index: 2;
+	top: 60px;
+	margin-left: 10px;
+	margin-right: 10px;
+	text-align: center;
+}
+.profilbilde{
+	position: relative;
+	top: 0px;
+	width: 150px;
+	height: 150px;
+	left: 0px;
+	right: 0px;
+	margin: auto;
+}
+#BildeKim{
+background-image: url(Img/tribus_kim.png);
+background-size: cover;
+}
+#tittleKim{
+text-align: center;
+
+position: relative;
+margin-top: 15px;
+
+}
+
+#BildeLydia{
+	background-image: url(Img/tribus_lydia.png);
+background-size: cover;
+}
+#BildeSylvio{
+	background-image: url(Img/tribus_sylvio.png);
+background-size: cover;
+}
+#OmSylvio{
+	float: right;
+}
+#OmLydia{
+	float: right;
+	
 }
