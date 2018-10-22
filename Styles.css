@@ -1,0 +1,103 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{background-color: whitesmoke;}
+.Nav{
+	background-color: white;
+	height: 70px;
+	position: sticky;
+	top: 0px;
+	width: 100%;
+	z-index: 4;
+	box-shadow: 0px 3px 5px 1px grey
+}
+
+.Logo{
+position: relative;
+margin-left: 15px;
+margin-right: 15px;
+top: 15px;
+height: 35px;
+width: 35px;
+float: right;
+background-color: white;
+color: white;
+border: none;
+
+}
+
+#Instagram{
+background-image: url(Img/InstagramLogo.svg);
+background-size: cover;
+
+}
+
+#Facebook{
+background-image: url(Img/FacebookLogo.svg);
+background-size: cover;
+
+}
+
+#Tribusikon{
+top: 0px;
+height: 80px;
+width: 80px;	
+background-image: url(Img/TribusLogo.svg);
+background-size: cover;	
+float: left;
+margin-left: 10px;
+position: relative;
+}
+
+.Content{
+	background-color: white;
+	margin-left-right: 30px;
+	height: 1000px;
+	width: 90%;
+margin: auto;
+	left: 0px;
+	right: 0px;
+	z-index: -1;
+	position: relative;
+}
+.header{
+	width: auto;
+	height: 750px;
+	background-image:url(Img/Tribus-forsude.png);
+	background-position: center;
+	background-size:cover;
+	background-repeat: no-repeat;
+	z-index: 1;
+	top: 0px;
+}
+.box{
+	
+width: 40%;
+padding: 20px;
+position: relative;
+}
+
+#Introtittel{
+	padding-top: 35px;
+	margin: auto;
+	position: relative;
+	
+	color: dimgray
+}
+
+.imagebox{
+
+width: 50%;
+height: 500px;
+
+
+}
+#imagebox1{
+	
+background-size: cover;
+background-image: url(Img/sopp.jpg);
+background-position: bottom;	
+float: right;
+top: -250px;
+position: relative;
+}
