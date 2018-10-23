@@ -5,6 +5,27 @@ body{background-color: whitesmoke;}
 
 /*===============================( NAVBAR, et helvete med toggle meny )============================*/
 
+.LocalNavFront{
+position: absolute;
+top: 0px;
+right: 0px;
+margin-right: 50px;
+margin-top: 30px;
+z-index: 5;
+color: darkolivegreen;
+font-size: 18px;
+text-decoration: none;
+}
+
+#FrontContact{
+text-decoration: none;
+color: darkolivegreen;
+}
+
+#FrontContact:hover{
+text-decoration: none;
+color: black;
+}
 .Nav{
 	background-color: white;
 	height: 70px;
@@ -191,7 +212,7 @@ width: 100%;
 }
 .MedlemInfo{
 	width: 25%;
-	height: 300px;
+	height: auto;
 	position:relative;
 	z-index: 2;
 	top: 60px;
