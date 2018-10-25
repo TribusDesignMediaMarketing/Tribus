@@ -65,6 +65,8 @@ color: black;
 display: block;
 	border-radius: 360px;
 	left: 25px;
+	background-image: url(Img/Homeicon.svg);
+	background-size: cover;
 }
 .Prices:hover{
 	width: 70px;
@@ -150,7 +152,7 @@ background-size: cover;
 margin: auto;
 	left: 0px;
 	right: 0px;
-	z-index: -1;
+	z-index: 1;
 	position: relative;
 }
 .header{
@@ -209,12 +211,12 @@ bottom: 0px;
 top: 200px;
 align-content: center;
 width: 100%;
+z-index: 3;
 }
 .MedlemInfo{
 	width: 25%;
 	height: auto;
 	position:relative;
-	z-index: 2;
 	top: 60px;
 	margin-left: 20px;
 	margin-right: 20px;
@@ -229,6 +231,7 @@ width: 100%;
 	left: 0px;
 	right: 0px;
 	margin: auto;
+	z-index: 2;
 }
 #BildeKim{
 background-image: url(Img/tribus_kim.png);
@@ -236,9 +239,9 @@ background-size: cover;
 }
 .tittlemedlem{
 text-align: center;
-
 position: relative;
 margin-top: 15px;
+z-index: 2;
 
 }
 
@@ -268,7 +271,12 @@ background-size: cover;
 	left: 0px;
 	top: 0px;
 	position: absolute;
+	z-index: 2;
 }
+
+
+/*===========(Paralax)==========*/
+
 .Paralax{
 z-index: 2;	
 position: relative;
@@ -283,4 +291,84 @@ background-attachment: fixed;
 background-size: cover;
 background-position: center;
 top: 750px;
-}			
+}		
+
+
+/*=============================(Contact info)================*/
+
+
+.ContactInfo{
+	width: 25%;
+	height: auto;
+	position:relative;
+	top: 60px;
+	margin-left: 20px;
+	margin-right: 20px;
+	text-align: left;
+	font-size: 15px;
+}
+.ContactBox{
+margin-top: 25px;	
+}
+
+
+.ContactRAD{
+	margin-top: 5px;
+	position: relative;
+	width: 100%;
+	height: auto;
+	margin-bottom: 5px;
+}
+
+
+.ContactText{
+text-decoration: none;
+color: black;
+position: relative;
+top: -25px;
+float: right;
+width: 80%;
+height: auto;
+}
+.ContactText:hover{
+color: darkolivegreen;
+}
+.Call{
+position: relative;
+width: 30px;
+height: 30px;
+background-color: none;
+background-size: cover;
+background-image: url(Img/PhoneLogo.svg);
+top: 0px;
+}
+.Email{
+position: relative;
+width: 30px;
+height: 30px;
+background-color: none;
+background-size: cover;
+background-image: url(Img/MailLogo.svg);
+top: 0px;	
+}
+
+.InstagramPriv{
+	
+position: relative;
+width: 30px;
+height: 30px;
+background-color: none;
+background-size: cover;
+background-image: url(Img/InstagramLogo.svg);
+top: 0px;
+}
+
+.Linkedin{
+position: relative;
+width: 30px;
+height: 30px;
+background-color: none;
+background-size: cover;
+background-image: url(Img/LinkedInLogo.svg);
+top: 0px;
+}
