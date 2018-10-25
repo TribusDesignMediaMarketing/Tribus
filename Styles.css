@@ -105,8 +105,8 @@ height: 0px;
 
 input[type=checkbox] ~ label {
 top: 0px;
-height: 80px;
-width: 80px;	
+height: 70px;
+width: 70px;	
 background-image: url(Img/TribusLogo.svg);
 background-size: cover;	
 float: left;
